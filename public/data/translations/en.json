@@ -1,0 +1,274 @@
+{
+  "nav": {
+    "home": "HOME",
+    "products": "PRODUCTS",
+    "logistics": "LOGISTICS",
+    "quality": "QUALITY & CERTIFICATION",
+    "about": "ABOUT US",
+    "contact": "CONTACT",
+    "quotation": "REQUEST QUOTATION",
+    "language": "Language"
+  },
+  "hero": {
+    "tag": "INDUSTRIAL SCRAP METAL",
+    "title": "Reliable Supply. Certified Quality. Global Delivery.",
+    "subtitle": "Your trusted partner for premium scrap metal export from Algeria to the world.",
+    "certified_quality": "CERTIFIED QUALITY",
+    "fast_shipping": "FAST SHIPPING",
+    "large_capacity": "LARGE CAPACITY",
+    "global_reach": "GLOBAL REACH",
+    "rfq": "REQUEST QUOTATION (RFQ)",
+    "catalogue": "DOWNLOAD CATALOGUE"
+  },
+  "strategic": {
+    "title": "STRATEGIC ADVANTAGE",
+    "subtitle": "Closer to Europe, Stronger Together",
+    "description": "Reduced sea distance to Europe compared to Asia",
+    "distance": "UP TO\nSHORTER SEA DISTANCE",
+    "percent": "50%"
+  },
+  "stats": {
+    "capacity": "TONS ANNUAL CAPACITY",
+    "ports": "MAJOR LOADING PORTS",
+    "countries": "COUNTRIES SUPPLIED",
+    "response": "RFQ RESPONSE TIME"
+  },
+  "products": {
+    "title": "OUR PRODUCTS",
+    "view_all": "VIEW ALL PRODUCTS",
+    "hms": {
+      "title": "HMS 1 & 2",
+      "subtitle": "(80:20)",
+      "description": "Heavy Melting Scrap\n80% Steel / 20% Iron\nSize: 500x500 mm max",
+      "specs": "VIEW SPECIFICATIONS",
+      "type": "Raw Material / Recycling Scrap",
+      "full_description": "Standardized mix of heavy wrought iron and steel scrap, processed for optimal melting in Electric Arc Furnaces (EAF). HMS 1 consists of high-density pieces with a thickness ≥ 6 mm, while HMS 2 includes pieces with a thickness ≥ 4 mm.",
+      "apps_title": "Key Applications",
+      "apps": [
+        "Direct steel mill remelting",
+        "Steel billets production",
+        "Industrial recycling raw material",
+        "Structural steel manufacturing"
+      ],
+      "specs_title": "Technical Specifications",
+      "specs_list": [
+        { "label": "International Standard", "value": "ISRI 200-206" },
+        { "label": "HMS 1 Thickness", "value": "≥ 6 mm" },
+        { "label": "HMS 2 Thickness", "value": "≥ 4 mm" },
+        { "label": "Purity Rate", "value": "Fe ≥ 99%" }
+      ]
+    },
+    "shredded": {
+      "title": "Shredded Scrap",
+      "subtitle": "(SHEAR / SHREDDED)",
+      "description": "Shredded / Sheared Scrap\nSize: 50x50 mm max\nPrepared & Clean",
+      "specs": "VIEW SPECIFICATIONS",
+      "type": "High-Density Homogenized Scrap",
+      "full_description": "Premium grade steel scrap processed through industrial shredders and magnetically separated to eliminate non-ferrous materials and impurities. Offers exceptional furnace yield and loading density.",
+      "apps_title": "Key Applications",
+      "apps": [
+        "Rapid induction furnace feeding",
+        "Low-impurity steelmaking operations",
+        "High-efficiency continuous casting",
+        "Clean weight charge component"
+      ],
+      "specs_title": "Technical Specifications",
+      "specs_list": [
+        { "label": "Reference Code", "value": "ISRI 210-212 (Shredded)" },
+        { "label": "Bulk Density", "value": "≥ 1.2 Tn/m³" },
+        { "label": "Fragment Size", "value": "Max 50x50 mm" },
+        { "label": "Debris Content", "value": "< 0.5%" }
+      ]
+    },
+    "rebar": {
+      "title": "Rebar Scrap",
+      "subtitle": "(STEEL BARS)",
+      "description": "Rebar / Steel Scrap\nDia: 8mm – 32mm\nLength: 1m max",
+      "specs": "VIEW SPECIFICATIONS",
+      "type": "Structural Steel Scrap",
+      "full_description": "High tensile mechanical strength reinforcing bar crop ends and structural construction scrap steel. Clean, sorted by grade, and sheared to short lengths for efficient handling and direct melting.",
+      "apps_title": "Key Applications",
+      "apps": [
+        "Remelting for new profile production",
+        "Recycled reinforcing armature components",
+        "Structural steel mill raw feed",
+        "Industrial forging operations"
+      ],
+      "specs_title": "Technical Specifications",
+      "specs_list": [
+        { "label": "Diameter Range", "value": "8 mm to 32 mm" },
+        { "label": "Original Grade", "value": "B500B / Grade 60" },
+        { "label": "Cut Length", "value": "Max 1 meter" },
+        { "label": "Feature", "value": "High mechanical bonding" }
+      ]
+    },
+    "cast_iron": {
+      "title": "Cast Iron Scrap",
+      "subtitle": "(FOUNDRY)",
+      "description": "Cast Iron Scrap\nFoundry Returns\nPiece Size: 300mm max",
+      "specs": "VIEW SPECIFICATIONS",
+      "type": "Specialized Foundry Grade Scrap",
+      "full_description": "Clean grey or malleable cast iron scrap blocks, machinery parts, and foundry returns. Features a stable chemical composition with optimal carbon metrics for uniform melting in cupola or induction furnaces.",
+      "apps_title": "Key Applications",
+      "apps": [
+        "New mechanical part casting",
+        "Engine blocks and housings production",
+        "Precision ferrous metal foundries",
+        "Carbon correction in metallurgy"
+      ],
+      "specs_title": "Technical Specifications",
+      "specs_list": [
+        { "label": "Cast Iron Type", "value": "Grey / Malleable" },
+        { "label": "Maximum Size", "value": "300 mm" },
+        { "label": "Carbon Level", "value": "Typical 3.2% - 4.2%" },
+        { "label": "Contamination", "value": "Chrome & Lead Free" }
+      ]
+    }
+  },
+  "logistics": {
+    "title": "SUPPLY & LOGISTICS",
+    "ports": {
+      "title": "LOADING PORTS",
+      "items": ["Port of Skikda", "Port of Oran", "Port of Algiers", "More ports available on request"]
+    },
+    "markets": {
+      "title": "MAIN MARKETS",
+      "items": ["Europe", "Middle East", "North Africa", "Asia", "West Africa"]
+    },
+    "shipping": {
+      "title": "SHIPPING TIME (TO EUROPE)",
+      "items": ["Spain: 3-5 days", "Italy: 4-6 days", "France: 4-6 days", "Turkey: 3-5 days"]
+    },
+    "incoterms": {
+      "title": "INCOTERMS",
+      "items": ["FOB", "CIF", "CFR", "Other terms on request."]
+    },
+    "process": {
+      "title": "OUR EXPORT PROCESS",
+      "steps": [
+        { "title": "01. INQUIRY", "description": "You send us your request" },
+        { "title": "02. CONFIRMATION", "description": "We check availability & send quotation" },
+        { "title": "03. INSPECTION", "description": "Quality check by SGS, BV or other" },
+        { "title": "04. LOADING", "description": "Professional loading & documents" },
+        { "title": "05. SHIPPING", "description": "On-time delivery to your destination" }
+      ]
+    }
+  },
+  "quality": {
+    "title": "QUALITY & CERTIFICATIONS",
+    "view_all": "VIEW ALL",
+    "items": [
+      { "name": "SGS", "description": "Inspection Available" },
+      { "name": "Bureau Veritas", "description": "Inspection Available" },
+      { "name": "ISO 9001", "description": "Quality Management System" },
+      { "name": "ASTM Standards", "description": "Compliant Grades" },
+      { "name": "EN Standards", "description": "Compliant Grades" }
+    ]
+  },
+  "quality_page": {
+    "title": "Quality & Certification Commitments",
+    "hero_subtitle": "We guarantee strict international standards for every ton exported, with complete traceability.",
+    "process_title": "Our Quality Process",
+    "steps": [
+      { "title": "Reception", "desc": "Visual check and sorting" },
+      { "title": "Analysis", "desc": "Precision spectrometry" },
+      { "title": "Preparation", "desc": "Cleaning and densification" },
+      { "title": "Validation", "desc": "Third-party inspection (SGS/BV)" }
+    ],
+    "download_btn": "Download Certification"
+  },
+  "footer": {
+    "cta": {
+      "title": "Ready to start your next shipment?",
+      "description": "Contact our team today and receive your competitive quotation.",
+      "contact": "CONTACT US",
+      "whatsapp": "CHAT ON WHATSAPP"
+    },
+    "quick_links": "Quick Links",
+    "contact_info": "Contact Info",
+    "follow_us": "Follow Us",
+    "copyright": "© 2026 Algeria Metal Export Solutions. All rights reserved."
+  },
+  "products_page": {
+    "title": "OUR PRODUCTS",
+    "hero_subtitle": "High quality scrap metal products available in bulk supply with consistent specifications and competitive pricing.",
+    "consistent_quality": "CONSISTENT QUALITY",
+    "consistent_desc": "Strict quality control & inspection",
+    "certified_products": "CERTIFIED PRODUCTS",
+    "certified_desc": "Compliant with international standards",
+    "large_capacity": "LARGE CAPACITY",
+    "large_desc": "Regular stock & bulk supply",
+    "customized_solutions": "CUSTOMIZED SOLUTIONS",
+    "customized_desc": "Tailored specifications on request",
+    "all_products": "ALL PRODUCTS",
+    "ferrous_scrap": "FERROUS SCRAP",
+    "non_ferrous_scrap": "NON-FERROUS SCRAP",
+    "shredded_scrap": "SHREDDED SCRAP",
+    "foundry_scrap": "FOUNDRY SCRAP",
+    "steel_products": "STEEL PRODUCTS",
+    "download_catalogue": "DOWNLOAD CATALOGUE",
+    "view_specs": "VIEW SPECIFICATIONS",
+    "size": "Size",
+    "thickness": "Thickness",
+    "density": "Density",
+    "moisture": "Moisture",
+    "packaging": "Packaging",
+    "origin": "Origin",
+    "length": "Length",
+    "condition": "Condition",
+    "composition": "Composition",
+    "packaging_options": {
+      "title": "PACKAGING OPTIONS",
+      "desc": "Bulk / Loose\nContainers / Loose"
+    },
+    "monthly_capacity": {
+      "title": "MONTHLY CAPACITY",
+      "desc": "100,000+ Tons\nConsistent Supply"
+    },
+    "quality_standard": {
+      "title": "QUALITY STANDARD",
+      "desc": "ASTM / EN / ISO\nCertified Products"
+    },
+    "inspection": {
+      "title": "INSPECTION",
+      "desc": "SGS / BV / TUV\nThird Party Inspection"
+    },
+    "payment_terms": {
+      "title": "PAYMENT TERMS",
+      "desc": "T/T / L/C\nFlexible Terms"
+    },
+    "cta": {
+      "title": "Ready to get a quote for your required product?",
+      "subtitle": "Send us your requirements and receive a competitive offer within 24h."
+    }
+  },
+  "products_page": {
+    "title": "PRODUCTS",
+    "hero_subtitle": "High quality scrap metal products available in bulk supply with consistent specifications and competitive pricing.",
+    "consistent_quality": "CONSISTENT\nQUALITY",
+    "consistent_desc": "Strict quality control\n& inspection",
+    "certified_products": "CERTIFIED\nPRODUCTS",
+    "certified_desc": "Compliant with\ninternational standards",
+    "large_capacity": "LARGE\nCAPACITY",
+    "large_desc": "Regular stock\n& bulk supply",
+    "customized_solutions": "CUSTOMIZED\nSOLUTIONS",
+    "customized_desc": "Tailored specifications\non request",
+    "all_products": "ALL PRODUCTS",
+    "ferrous_scrap": "FERROUS SCRAP",
+    "non_ferrous_scrap": "NON-FERROUS SCRAP",
+    "shredded_scrap": "SHREDDED SCRAP",
+    "foundry_scrap": "FOUNDRY SCRAP",
+    "steel_products": "STEEL PRODUCTS",
+    "download_catalogue": "DOWNLOAD CATALOGUE",
+    "view_specs": "VIEW SPECIFICATIONS",
+    "size": "Size",
+    "thickness": "Thickness",
+    "density": "Density",
+    "moisture": "Moisture",
+    "packaging": "Packaging",
+    "origin": "Origin",
+    "length": "Length",
+    "condition": "Condition",
+    "composition": "Composition"
+  }
+}

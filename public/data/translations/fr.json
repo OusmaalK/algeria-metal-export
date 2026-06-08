@@ -1,0 +1,275 @@
+{
+  "nav": {
+    "home": "ACCUEIL",
+    "products": "PRODUITS",
+    "logistics": "LOGISTIQUE",
+    "quality": "QUALITÉ & CERTIFICATION",
+    "about": "À PROPOS",
+    "contact": "CONTACT",
+    "quotation": "DEMANDE DE DEVIS",
+    "language": "Langue"
+  },
+  "hero": {
+    "tag": "FERRAILLE INDUSTRIELLE",
+    "title": "Approvisionnement fiable. Qualité certifiée. Livraison mondiale.",
+    "subtitle": "Votre partenaire de confiance pour l'exportation de ferraille premium depuis l'Algérie vers le monde.",
+    "certified_quality": "QUALITÉ CERTIFIÉE",
+    "fast_shipping": "EXPÉDITION RAPIDE",
+    "large_capacity": "GRANDE CAPACITÉ",
+    "global_reach": "PORTÉE MONDIALE",
+    "rfq": "DEMANDE DE DEVIS (RFQ)",
+    "catalogue": "TÉLÉCHARGER LE CATALOGUE"
+  },
+  "strategic": {
+    "title": "AVANTAGE STRATÉGIQUE",
+    "subtitle": "Plus proche de l'Europe, plus fort ensemble",
+    "description": "Distance maritime réduite vers l'Europe par rapport à l'Asie",
+    "distance": "JUSQU'À\nDISTANCE MARITIME PLUS COURTE",
+    "percent": "50%"
+  },
+  "stats": {
+    "capacity": "TONNES DE CAPACITÉ ANNUELLE",
+    "ports": "PRINCIPAUX PORTS DE CHARGEMENT",
+    "countries": "PAYS APPROVISIONNÉS",
+    "response": "TEMPS DE RÉPONSE RFQ"
+  },
+  "products": {
+    "title": "NOS PRODUITS",
+    "view_all": "VOIR TOUS LES PRODUITS",
+    "hms": {
+      "title": "HMS 1 & 2",
+      "subtitle": "(80:20)",
+      "description": "Ferraille lourde\n80% Acier / 20% Fer\nTaille : 500x500 mm max",
+      "specs": "VOIR LES SPÉCIFICATIONS",
+      "type": "Matière Première / Ferraille de Recyclage",
+      "full_description": "Mélange standardisé de ferrailles lourdes d'acier et de fer forgé noir, préparé pour une fusion optimale dans les fours électriques à arc (EAF). Le HMS 1 comprend des structures d'une épaisseur ≥ 6 mm à haute densité, tandis que le HMS 2 intègre des pièces d'épaisseur ≥ 4 mm.",
+      "apps_title": "Applications Principales",
+      "apps": [
+        "Refusion directe en aciérie",
+        "Production de billettes d'acier",
+        "Matière première de recyclage industriel",
+        "Fabrication d'aciers de construction"
+      ],
+      "specs_title": "Spécifications Techniques",
+      "specs_list": [
+        { "label": "Norme Internationale", "value": "ISRI 200-206" },
+        { "label": "Épaisseur HMS 1", "value": "≥ 6 mm" },
+        { "label": "Épaisseur HMS 2", "value": "≥ 4 mm" },
+        { "label": "Taux de Pureté", "value": "Fe ≥ 99%" }
+      ]
+    },
+    "shredded": {
+      "title": "Ferraille Déchiquetée",
+      "subtitle": "(CISAILLÉE / DÉCHIQUETÉE)",
+      "description": "Ferraille cisailée / déchiquetée\nTaille : 50x50 mm max\nPréparée et propre",
+      "specs": "VOIR LES SPÉCIFICATIONS",
+      "type": "Ferraille Homogénéisée Haute Densité",
+      "full_description": "Ferraille d'acier de nuances supérieures, passée au broyeur puis triée magnétiquement pour éliminer les impuretés et résidus non ferreux. Offre un excellent rendement de coulée et une densité de chargement maximale.",
+      "apps_title": "Applications Principales",
+      "apps": [
+        "Alimentation rapide de fours à induction",
+        "Aciéries exigeant un faible taux d'impuretés",
+        "Coulée continue haute performance",
+        "Composant de charge propre"
+      ],
+      "specs_title": "Spécifications Techniques",
+      "specs_list": [
+        { "label": "Norme de Référence", "value": "ISRI 210-212 (Shredded)" },
+        { "label": "Densité de Charge", "value": "≥ 1.2 Tn/m³" },
+        { "label": "Taille des fragments", "value": "Max 50x50 mm" },
+        { "label": "Taux de Stériles", "value": "< 0.5%" }
+      ]
+    },
+    "rebar": {
+      "title": "Ferraille de Barres d'Acier",
+      "subtitle": "(BARRES D'ACIER)",
+      "description": "Ferraille de barres d'acier\nDiamètre : 8mm – 32mm\nLongueur : 1m max",
+      "specs": "VOIR LES SPÉCIFICATIONS",
+      "type": "Ferraille d'Acier de Structure",
+      "full_description": "Chutes neuves de ronds à béton et barres de construction structurelles à haute résistance mécanique. Les éléments sont triés par nuance et coupés en longueurs contrôlées pour faciliter leur manutention.",
+      "apps_title": "Applications Principales",
+      "apps": [
+        "Refusion pour la fabrication de nouveaux profilés",
+        "Éléments d'armatures de renfort recyclés",
+        "Matière première d'aciérie de construction",
+        "Applications industrielles de forge"
+      ],
+      "specs_title": "Spécifications Techniques",
+      "specs_list": [
+        { "label": "Gamme de Diamètres", "value": "8 mm à 32 mm" },
+        { "label": "Nuance d'Origine", "value": "B500B / Grade 60" },
+        { "label": "Longueur de coupe", "value": "Max 1 mètre" },
+        { "label": "Propriété", "value": "Haute adhérence mécanique" }
+      ]
+    },
+    "cast_iron": {
+      "title": "Ferraille de Fonte",
+      "subtitle": "(FONDERIE)",
+      "description": "Ferraille de fonte\nRetours de fonderie\nTaille de pièce : 300mm max",
+      "specs": "VOIR LES SPÉCIFICATIONS",
+      "type": "Ferraille Spéciale Fonderie",
+      "full_description": "Chutes, blocs et retours de fonderie de fonte grise ou malléable. Excellente composition chimique stable avec un taux de carbone optimal, facilitant le processus de refusion dans les cubilots ou fours à induction.",
+      "apps_title": "Applications Principales",
+      "apps": [
+        "Moulage de pièces mécaniques neuves",
+        "Production de carters et blocs moteurs",
+        "Fonderies de précision de métaux ferreux",
+        "Ajustement du carbone en métallurgie"
+      ],
+      "specs_title": "Spécifications Techniques",
+      "specs_list": [
+        { "label": "Type de Fonte", "value": "Grise / Malléable" },
+        { "label": "Taille Maximale", "value": "300 mm" },
+        { "label": "Taux de Carbone", "value": "Typique 3.2% - 4.2%" },
+        { "label": "Contamination", "value": "Exempt de chrome et plomb" }
+      ]
+    }
+  },
+  "logistics": {
+    "title": "APPROVISIONNEMENT & LOGISTIQUE",
+    "ports": {
+      "title": "PORTS DE CHARGEMENT",
+      "items": ["Port de Skikda", "Port d'Oran", "Port d'Alger", "Plus de ports disponibles sur demande"]
+    },
+    "markets": {
+      "title": "PRINCIPAUX MARCHÉS",
+      "items": ["Europe", "Moyen-Orient", "Afrique du Nord", "Asie", "Afrique de l'Ouest"]
+    },
+    "shipping": {
+      "title": "TEMPS D'EXPÉDITION (VERS L'EUROPE)",
+      "items": ["Espagne : 3-5 jours", "Italie : 4-6 jours", "France : 4-6 jours", "Turquie : 3-5 jours"]
+    },
+    "incoterms": {
+      "title": "INCOTERMS",
+      "items": ["FOB", "CIF", "CFR", "Autres termes sur demande."]
+    },
+    "process": {
+      "title": "NOTRE PROCESSUS D'EXPORTATION",
+      "steps": [
+        { "title": "01. DEMANDE", "description": "Vous nous envoyez votre demande" },
+        { "title": "02. CONFIRMATION", "description": "Nous vérifions la disponibilité et envoyons le devis" },
+        { "title": "03. INSPECTION", "description": "Contrôle qualité par SGS, BV ou autre" },
+        { "title": "04. CHARGEMENT", "description": "Chargement professionnel et documents" },
+        { "title": "05. EXPÉDITION", "description": "Livraison à temps vers votre destination" }
+      ]
+    }
+  },
+  "quality": {
+    "title": "QUALITÉ & CERTIFICATIONS",
+    "view_all": "VOIR TOUT",
+    "items": [
+      { "name": "SGS", "description": "Inspection disponible" },
+      { "name": "Bureau Veritas", "description": "Inspection disponible" },
+      { "name": "ISO 9001", "description": "Système de management de la qualité" },
+      { "name": "Normes ASTM", "description": "Qualités conformes" },
+      { "name": "Normes EN", "description": "Qualités conformes" }
+    ]
+  },
+  "quality_page": {
+    "title": "Engagements Qualité & Certifications",
+    "hero_subtitle": "Nous garantissons des standards internationaux stricts pour chaque tonne exportée, avec une traçabilité totale.",
+    "process_title": "Notre Processus de Contrôle",
+    "steps": [
+      { "title": "Réception", "desc": "Contrôle visuel et tri" },
+      { "title": "Analyse", "desc": "Spectrométrie de précision" },
+      { "title": "Préparation", "desc": "Nettoyage et densification" },
+      { "title": "Validation", "desc": "Inspection par tiers (SGS/BV)" }
+    ],
+    "download_btn": "Télécharger la certification"
+  },
+  
+  "footer": {
+    "cta": {
+      "title": "Prêt à commencer votre prochaine expédition ?",
+      "description": "Contactez notre équipe aujourd'hui et recevez votre devis compétitif.",
+      "contact": "CONTACTEZ-NOUS",
+      "whatsapp": "CHATTER SUR WHATSAPP"
+    },
+    "quick_links": "Liens rapides",
+    "contact_info": "Informations de contact",
+    "follow_us": "Suivez-nous",
+    "copyright": "© 2026 Algeria Metal Export Solutions. Tous droits réservés."
+  },
+  "products_page": {
+    "title": "NOS PRODUITS",
+    "hero_subtitle": "Produits en ferraille de haute qualité disponibles en vrac avec des spécifications constantes et des prix compétitifs.",
+    "consistent_quality": "QUALITÉ CONSTANTE",
+    "consistent_desc": "Contrôle qualité strict et inspection",
+    "certified_products": "PRODUITS CERTIFIÉS",
+    "certified_desc": "Conformes aux normes internationales",
+    "large_capacity": "GRANDE CAPACITÉ",
+    "large_desc": "Stock régulier et approvisionnement en vrac",
+    "customized_solutions": "SOLUTIONS PERSONNALISÉES",
+    "customized_desc": "Spécifications adaptées sur demande",
+    "all_products": "TOUS LES PRODUITS",
+    "ferrous_scrap": "Ferraille ferreuse",
+    "non_ferrous_scrap": "Ferraille non ferreuse",
+    "shredded_scrap": "Ferraille déchiquetée",
+    "foundry_scrap": "Ferraille de fonderie",
+    "steel_products": "Produits en acier",
+    "download_catalogue": "TÉLÉCHARGER LE CATALOGUE",
+    "view_specs": "VOIR LES SPÉCIFICATIONS",
+    "size": "Taille",
+    "thickness": "Épaisseur",
+    "density": "Densité",
+    "moisture": "Humidité",
+    "packaging": "Emballage",
+    "origin": "Origine",
+    "length": "Longueur",
+    "condition": "État",
+    "composition": "Composition",
+    "packaging_options": {
+      "title": "OPTIONS D'EMBALLAGE",
+      "desc": "Vrac / Loose\nConteneurs / Loose"
+    },
+    "monthly_capacity": {
+      "title": "CAPACITÉ MENSUELLE",
+      "desc": "100,000+ Tonnes\nApprovisionnement constant"
+    },
+    "quality_standard": {
+      "title": "NORME DE QUALITÉ",
+      "desc": "ASTM / EN / ISO\nProduits certifiés"
+    },
+    "inspection": {
+      "title": "INSPECTION",
+      "desc": "SGS / BV / TUV\nInspection par tiers"
+    },
+    "payment_terms": {
+      "title": "CONDITIONS DE PAIEMENT",
+      "desc": "T/T / L/C\nConditions flexibles"
+    },
+    "cta": {
+      "title": "Prêt à obtenir un devis pour votre produit ?",
+      "subtitle": "Envoyez-nous vos besoins et recevez une offre compétitive sous 24h."
+    }
+  },
+  "products_page": {
+    "title": "PRODUCTS",
+    "hero_subtitle": "High quality scrap metal products available in bulk supply with consistent specifications and competitive pricing.",
+    "consistent_quality": "CONSISTENT\nQUALITY",
+    "consistent_desc": "Strict quality control\n& inspection",
+    "certified_products": "CERTIFIED\nPRODUCTS",
+    "certified_desc": "Compliant with\ninternational standards",
+    "large_capacity": "LARGE\nCAPACITY",
+    "large_desc": "Regular stock\n& bulk supply",
+    "customized_solutions": "CUSTOMIZED\nSOLUTIONS",
+    "customized_desc": "Tailored specifications\non request",
+    "all_products": "ALL PRODUCTS",
+    "ferrous_scrap": "FERROUS SCRAP",
+    "non_ferrous_scrap": "NON-FERROUS SCRAP",
+    "shredded_scrap": "SHREDDED SCRAP",
+    "foundry_scrap": "FOUNDRY SCRAP",
+    "steel_products": "STEEL PRODUCTS",
+    "download_catalogue": "DOWNLOAD CATALOGUE",
+    "view_specs": "VIEW SPECIFICATIONS",
+    "size": "Size",
+    "thickness": "Thickness",
+    "density": "Density",
+    "moisture": "Moisture",
+    "packaging": "Packaging",
+    "origin": "Origin",
+    "length": "Length",
+    "condition": "Condition",
+    "composition": "Composition"
+  }
+}
