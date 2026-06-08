@@ -199,3 +199,14 @@ html {
 [dir="rtl"] .order-last {
   order: 9999;
 }
+
+/* ✅ EMPÊCHER LE DÉBORDEMENT HORIZONTAL */
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+* {
+  max-width: 100%;
+  box-sizing: border-box;
+}
