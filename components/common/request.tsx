@@ -20,8 +20,6 @@ import {
   Send,
   CheckCircle
 } from "lucide-react";
-import Header from '@/components/header/Header';
-import Actions from '@/components/header/Actions';
 
 export default function RequestQuotationPage() {
   const { t, locale, changeLanguage } = useTranslation();
@@ -70,19 +68,16 @@ export default function RequestQuotationPage() {
   return (
     <div className="min-h-screen bg-[#0f172a] text-white font-sans">
       
-      {/* ================= HEADER ================= */}
-      <Header t={t} locale={locale} changeLanguage={changeLanguage} />
-
       {/* ================= MAIN CONTENT ================= */}
       <main className="container mx-auto px-4 py-8">
         
         {/* ================= HERO ================= */}
         <div className="relative mb-12 text-center">
           <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-4">
-            REQUEST QUOTATION
+            {t.request_page.title}
           </h1>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-            Ready to receive your competitive offer? Provide your requirements below.
+            {t.request_page.hero_subtitle}
           </p>
         </div>
 
@@ -94,10 +89,10 @@ export default function RequestQuotationPage() {
             
             {/* PROJECT & CONTACT DETAILS */}
             <div className="bg-[#1e293b] border border-orange-500 rounded-xl p-6">
-              <h2 className="text-xl font-bold mb-4">PROJECT & CONTACT DETAILS</h2>
+              <h2 className="text-xl font-bold mb-4">{t.request_page.section_contact_title}</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-sm text-gray-400 mb-1">Company Name</label>
+                  <label className="block text-sm text-gray-400 mb-1">{t.request_page.contact_company}</label>
                   <input
                     type="text"
                     name="companyName"
@@ -107,7 +102,7 @@ export default function RequestQuotationPage() {
                   />
                 </div>
                 <div>
-                  <label className="block text-sm text-gray-400 mb-1">Contact Person</label>
+                  <label className="block text-sm text-gray-400 mb-1">{t.request_page.contact_person}</label>
                   <input
                     type="text"
                     name="contactPerson"
@@ -117,7 +112,7 @@ export default function RequestQuotationPage() {
                   />
                 </div>
                 <div>
-                  <label className="block text-sm text-gray-400 mb-1">Email Address</label>
+                  <label className="block text-sm text-gray-400 mb-1">{t.request_page.contact_email}</label>
                   <input
                     type="email"
                     name="email"
@@ -127,15 +122,15 @@ export default function RequestQuotationPage() {
                   />
                 </div>
                 <div>
-                  <label className="block text-sm text-gray-400 mb-1">Project Type</label>
+                  <label className="block text-sm text-gray-400 mb-1">{t.request_page.contact_project_type}</label>
                   <select
                     name="projectType"
                     value={formData.projectType}
                     onChange={handleChange}
                     className="w-full bg-[#0f172a] border border-gray-700 rounded-md px-3 py-2 text-white focus:border-orange-500 focus:outline-none"
                   >
-                    <option value="">Select...</option>
-                    <option value="infrastructure">Infrastructure, Construction, Manufacturing, etc.</option>
+                    <option value="">{t.request_page.select_option}</option>
+                    <option value="infrastructure">{t.request_page.project_type_infrastructure}</option>
                   </select>
                 </div>
               </div>
@@ -143,24 +138,24 @@ export default function RequestQuotationPage() {
 
             {/* SHIPPING & LOGISTICS */}
             <div className="bg-[#1e293b] border border-orange-500 rounded-xl p-6">
-              <h2 className="text-xl font-bold mb-4">SHIPPING & LOGISTICS</h2>
+              <h2 className="text-xl font-bold mb-4">{t.request_page.section_shipping_title}</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-sm text-gray-400 mb-1">Preferred Port of Load</label>
+                  <label className="block text-sm text-gray-400 mb-1">{t.request_page.shipping_port_load}</label>
                   <select
                     name="portOfLoad"
                     value={formData.portOfLoad}
                     onChange={handleChange}
                     className="w-full bg-[#0f172a] border border-gray-700 rounded-md px-3 py-2 text-white focus:border-orange-500 focus:outline-none"
                   >
-                    <option value="">Select...</option>
-                    <option value="skikda">Port of Skikda</option>
-                    <option value="oran">Port of Oran</option>
-                    <option value="algiers">Port of Algiers</option>
+                    <option value="">{t.request_page.select_option}</option>
+                    <option value="skikda">{t.request_page.port_skikda}</option>
+                    <option value="oran">{t.request_page.port_oran}</option>
+                    <option value="algiers">{t.request_page.port_algiers}</option>
                   </select>
                 </div>
                 <div>
-                  <label className="block text-sm text-gray-400 mb-1">Final Destination Port</label>
+                  <label className="block text-sm text-gray-400 mb-1">{t.request_page.shipping_destination}</label>
                   <input
                     type="text"
                     name="destinationPort"
@@ -170,7 +165,7 @@ export default function RequestQuotationPage() {
                   />
                 </div>
                 <div>
-                  <label className="block text-sm text-gray-400 mb-1">Desired Lead Time</label>
+                  <label className="block text-sm text-gray-400 mb-1">{t.request_page.shipping_lead_time}</label>
                   <input
                     type="text"
                     name="leadTime"
@@ -180,14 +175,14 @@ export default function RequestQuotationPage() {
                   />
                 </div>
                 <div>
-                  <label className="block text-sm text-gray-400 mb-1">Preferred Incoterm</label>
+                  <label className="block text-sm text-gray-400 mb-1">{t.request_page.shipping_incoterm}</label>
                   <select
                     name="incoterm"
                     value={formData.incoterm}
                     onChange={handleChange}
                     className="w-full bg-[#0f172a] border border-gray-700 rounded-md px-3 py-2 text-white focus:border-orange-500 focus:outline-none"
                   >
-                    <option value="">Select...</option>
+                    <option value="">{t.request_page.select_option}</option>
                     <option value="fob">FOB</option>
                     <option value="cfr">CFR</option>
                     <option value="cif">CIF</option>
@@ -199,7 +194,7 @@ export default function RequestQuotationPage() {
 
           {/* PRODUCT & CAPACITY SELECTION */}
           <div className="bg-[#1e293b] border border-orange-500 rounded-xl p-6">
-            <h2 className="text-xl font-bold mb-4">PRODUCT & CAPACITY SELECTION</h2>
+            <h2 className="text-xl font-bold mb-4">{t.request_page.section_products_title}</h2>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mb-4">
               {/* HMS 1 & 2 */}
               <div className="bg-[#0f172a] p-3 rounded-lg border border-gray-700">
@@ -212,10 +207,10 @@ export default function RequestQuotationPage() {
                       className="object-cover"
                     />
                   </div>
-                  <span className="text-sm font-bold">HMS 1 & 2</span>
+                  <span className="text-sm font-bold">{t.request_page.product_hms}</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <span className="text-[10px] text-gray-400">QUANTITY (TONS)</span>
+                  <span className="text-[10px] text-gray-400">{t.request_page.quantity_label}</span>
                   <input
                     type="text"
                     value={formData.products.hms.quantity}
@@ -235,10 +230,10 @@ export default function RequestQuotationPage() {
                       className="object-cover"
                     />
                   </div>
-                  <span className="text-sm font-bold">Shredded<br/>Scrap</span>
+                  <span className="text-sm font-bold">{t.request_page.product_shredded}</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <span className="text-[10px] text-gray-400">QUANTITY (TONS)</span>
+                  <span className="text-[10px] text-gray-400">{t.request_page.quantity_label}</span>
                   <input
                     type="text"
                     value={formData.products.shredded.quantity}
@@ -258,10 +253,10 @@ export default function RequestQuotationPage() {
                       className="object-cover"
                     />
                   </div>
-                  <span className="text-sm font-bold">Rebar<br/>Scrap</span>
+                  <span className="text-sm font-bold">{t.request_page.product_rebar}</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <span className="text-[10px] text-gray-400">QUANTITY (TONS)</span>
+                  <span className="text-[10px] text-gray-400">{t.request_page.quantity_label}</span>
                   <input
                     type="text"
                     value={formData.products.rebar.quantity}
@@ -281,10 +276,10 @@ export default function RequestQuotationPage() {
                       className="object-cover"
                     />
                   </div>
-                  <span className="text-sm font-bold">Cast Iron<br/>Scrap</span>
+                  <span className="text-sm font-bold">{t.request_page.product_cast_iron}</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <span className="text-[10px] text-gray-400">QUANTITY (TONS)</span>
+                  <span className="text-[10px] text-gray-400">{t.request_page.quantity_label}</span>
                   <input
                     type="text"
                     value={formData.products.castIron.quantity}
@@ -304,10 +299,10 @@ export default function RequestQuotationPage() {
                       className="object-cover"
                     />
                   </div>
-                  <span className="text-sm font-bold">Steel<br/>Products</span>
+                  <span className="text-sm font-bold">{t.request_page.product_steel}</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <span className="text-[10px] text-gray-400">QUANTITY (TONS)</span>
+                  <span className="text-[10px] text-gray-400">{t.request_page.quantity_label}</span>
                   <input
                     type="text"
                     value={formData.products.steelProducts.quantity}
@@ -320,7 +315,7 @@ export default function RequestQuotationPage() {
             
             {/* Custom Specifications */}
             <div>
-              <label className="block text-sm text-gray-400 mb-1">CUSTOM SPECIFICATIONS OR ADDITIONAL NOTES</label>
+              <label className="block text-sm text-gray-400 mb-1">{t.request_page.notes_label}</label>
               <textarea
                 name="notes"
                 value={formData.notes}
@@ -338,7 +333,7 @@ export default function RequestQuotationPage() {
               className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-md font-bold text-sm tracking-wide transition inline-flex items-center gap-2 shadow-lg shadow-orange-500/25"
             >
               <Send className="w-4 h-4" />
-              SUBMIT FORM & RECEIVE QUOTE
+              {t.request_page.submit_btn}
             </button>
           </div>
         </form>
@@ -350,7 +345,7 @@ export default function RequestQuotationPage() {
             className="border border-gray-500 hover:border-white text-white px-8 py-3 rounded-md font-bold text-sm tracking-wide transition inline-flex items-center justify-center gap-2"
           >
             <Download className="w-4 h-4" />
-            DOWNLOAD QUOTATION TEMPLATE (PDF)
+            {t.request_page.download_btn}
           </Link>
         </div>
 
@@ -358,23 +353,23 @@ export default function RequestQuotationPage() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
           <div className="bg-[#1e293b] p-4 rounded-lg border border-gray-800 flex flex-col items-center text-center">
             <Box className="w-8 h-8 text-orange-500 mb-2" />
-            <h4 className="font-bold text-xs">PACKAGING</h4>
-            <p className="text-[10px] text-gray-400">Bulk / Loose<br/>Containers / Loose</p>
+            <h4 className="font-bold text-xs whitespace-pre-line">{t.request_page.grid1_title}</h4>
+            <p className="text-[10px] text-gray-400 whitespace-pre-line">{t.request_page.grid1_desc}</p>
           </div>
           <div className="bg-[#1e293b] p-4 rounded-lg border border-gray-800 flex flex-col items-center text-center">
             <Warehouse className="w-8 h-8 text-orange-500 mb-2" />
-            <h4 className="font-bold text-xs">MONTHLY<br/>CAPACITY</h4>
-            <p className="text-[10px] text-gray-400">100,000+ Tons<br/>Consistent Supply</p>
+            <h4 className="font-bold text-xs whitespace-pre-line">{t.request_page.grid2_title}</h4>
+            <p className="text-[10px] text-gray-400 whitespace-pre-line">{t.request_page.grid2_desc}</p>
           </div>
           <div className="bg-[#1e293b] p-4 rounded-lg border border-gray-800 flex flex-col items-center text-center">
             <Phone className="w-8 h-8 text-orange-500 mb-2" />
-            <h4 className="font-bold text-xs">PHONEUS</h4>
-            <p className="text-[10px] text-gray-400">+213 55 12 34 56 78</p>
+            <h4 className="font-bold text-xs whitespace-pre-line">{t.request_page.grid3_title}</h4>
+            <p className="text-[10px] text-gray-400 whitespace-pre-line">{t.request_page.grid3_desc}</p>
           </div>
           <div className="bg-[#1e293b] p-4 rounded-lg border border-gray-800 flex flex-col items-center text-center">
             <Users className="w-8 h-8 text-orange-500 mb-2" />
-            <h4 className="font-bold text-xs">SNAPPING</h4>
-            <p className="text-[10px] text-gray-400">International<br/>Networks</p>
+            <h4 className="font-bold text-xs whitespace-pre-line">{t.request_page.grid4_title}</h4>
+            <p className="text-[10px] text-gray-400 whitespace-pre-line">{t.request_page.grid4_desc}</p>
           </div>
         </div>
 
@@ -385,16 +380,16 @@ export default function RequestQuotationPage() {
               <Phone className="w-6 h-6 text-white" />
             </div>
             <div>
-              <h3 className="text-white font-bold text-lg">Need immediate support with your request?</h3>
-              <p className="text-sm text-gray-400">Our quotation team is ready to assist you.</p>
+              <h3 className="text-white font-bold text-lg">{t.request_page.cta_title}</h3>
+              <p className="text-sm text-gray-400">{t.request_page.cta_subtitle}</p>
             </div>
           </div>
           <div className="flex gap-3">
             <Link href="#" className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded text-sm font-medium flex items-center gap-2 transition">
-              <MessageCircle className="w-4 h-4" /> LIVE CHAT ON WHATSAPP
+              <MessageCircle className="w-4 h-4" /> {t.request_page.cta_btn1}
             </Link>
             <Link href="#" className="border border-gray-600 hover:border-white text-white px-6 py-2 rounded text-sm font-medium flex items-center gap-2 transition">
-              CALL OUR QUOTATION EXPERT TEAM
+              {t.request_page.cta_btn2}
             </Link>
           </div>
         </div>

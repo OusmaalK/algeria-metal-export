@@ -1,6 +1,6 @@
 export default function ContactMessage({ onClose }: any) {
     return (
-      <div className="fixed inset-0 z-[100] bg-black/50 flex items-center justify-center p-4">
+      <div className="fixed inset-0 z-100 bg-black/50 flex items-center justify-center p-4">
         <div className="bg-white p-8 rounded-2xl shadow-2xl max-w-sm text-center">
           <h3 className="text-xl font-bold text-gray-800 mb-4">Besoin du catalogue ?</h3>
           <p className="text-gray-600 mb-6">

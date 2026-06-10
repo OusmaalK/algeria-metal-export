@@ -65,7 +65,7 @@ export default function Products({ t, locale }: ProductsProps) {
             <div key={product.key} className="group">
               
               {/* Conteneur de l'image */}
-              <div className="aspect-[4/3] bg-gray-200 overflow-hidden relative w-full h-full">
+              <div className="aspect-4/3 bg-gray-200 overflow-hidden relative w-full h-full">
                 <Image
                   src={product.image}
                   alt={t?.products?.[product.key]?.title || 'Product'}

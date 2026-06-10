@@ -21,8 +21,6 @@ import {
   FileText,
   CreditCard
 } from "lucide-react";
-import Header from '@/components/header/Header';
-import Actions from '@/components/header/Actions';
 
 export default function ProductsPage() {
   const { t, locale, changeLanguage } = useTranslation();
@@ -127,10 +125,6 @@ export default function ProductsPage() {
 
   return (
     <div className="min-h-screen bg-[#0f172a] text-white font-sans">
-      
-      {/* ================= HEADER ================= */}
-      <Header t={t} locale={locale} changeLanguage={changeLanguage} />
-
       {/* ================= MAIN CONTENT ================= */}
       <main className="container mx-auto px-4 py-8">
         
@@ -226,7 +220,7 @@ export default function ProductsPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
           {filteredProducts.map((product) => (
             <div key={product.id} className="bg-[#1e293b] rounded-lg overflow-hidden border border-gray-800 hover:border-orange-500 transition">
-              <div className="aspect-[4/3] bg-gray-800 relative">
+              <div className="aspect-4/3 bg-gray-800 relative">
                 <Image 
                   src={product.image} 
                   alt={product.title} 

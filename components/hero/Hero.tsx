@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import { ShieldCheck, Truck, Warehouse, Globe, FileText, Send } from 'lucide-react';
-import ContactModal from '../products/ContactModal'; // Import de votre nouveau composant de devis
+import ContactModal from '../products/ContactModal';
 
 interface HeroProps {
   t: any;
@@ -12,8 +12,8 @@ interface HeroProps {
 
 export default function Hero({ t, locale }: HeroProps) {
   const isRTL = locale === 'ar';
-  // État unique pour gérer l'ouverture de la modal de devis
   const [showContactModal, setShowContactModal] = useState(false);
+  const [imageError, setImageError] = useState(false);
 
   const features = [
     { icon: ShieldCheck, key: 'certified_quality', sub: 'ASTM / EN / ISO\n3.1 Certificate' },
@@ -23,17 +23,20 @@ export default function Hero({ t, locale }: HeroProps) {
   ];
 
   return (
-    <section className="relative bg-[#0f172a] text-white overflow-hidden min-h-[650px] flex items-center">
+    <section className="relative bg-[#0f172a] text-white overflow-hidden min-h-162.5 flex items-center">
       {/* Image de fond */}
       <div className="absolute inset-0 w-full h-full">
-        <Image 
-          src="/images/hero/fond.svg" 
+        <img 
+          src="/static/fond.svg" 
           alt="Hero Background" 
-          fill 
-          className="object-cover object-center" 
-          priority 
+          className="w-full h-full object-cover object-center"
+          onError={() => setImageError(true)}
         />
-        <div className="absolute inset-0 bg-black/30 bg-gradient-to-r from-black/50 via-black/20 to-transparent"></div>
+        {/* Fond de secours si l'image ne charge pas */}
+        {imageError && (
+          <div className="absolute inset-0 bg-linear-to-br from-[#0f172a] to-[#1a2234]"></div>
+        )}
+        <div className="absolute inset-0 bg-black/30 bg-linear-to-r from-black/50 via-black/20 to-transparent"></div>
       </div>
 
       <div className="container mx-auto px-6 relative z-10 pt-10 pb-20">
@@ -55,7 +58,7 @@ export default function Hero({ t, locale }: HeroProps) {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-6 border-t border-gray-700/50 mt-6">
               {features.map((feature, index) => (
                 <div key={index} className="flex items-start gap-3">
-                  <feature.icon className="w-12 h-12 text-orange-500 flex-shrink-0" />
+                  <feature.icon className="w-12 h-12 text-orange-500 shrink-0" />
                   <div>
                     <p className="font-bold text-base">{t?.hero?.[feature.key]}</p>
                     <p className="text-gray-400 text-xs leading-tight whitespace-pre-line">{feature.sub}</p>
@@ -83,40 +86,39 @@ export default function Hero({ t, locale }: HeroProps) {
             </div>
           </div>
 
-
-            {/* Colonne Droite : STRATEGIC ADVANTAGE avec globe animé */}
-            <div className="lg:col-span-5 flex justify-center lg:justify-end">
+          {/* Colonne Droite : STRATEGIC ADVANTAGE avec globe animé */}
+          <div className="lg:col-span-5 flex justify-center lg:justify-end">
             <div className="backdrop-blur-sm bg-[#0f172a]/90 border border-orange-500/30 p-6 rounded-xl max-w-sm w-full text-center shadow-2xl relative overflow-hidden">
-                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-orange-500 to-transparent"></div>
+              <div className="absolute top-0 left-0 w-full h-1 bg-linear-to-r from-orange-500 to-transparent"></div>
 
-                <h3 className="text-white font-bold text-lg mb-1 drop-shadow-md">
+              <h3 className="text-white font-bold text-lg mb-1 drop-shadow-md">
                 {t?.strategic?.title || 'STRATEGIC ADVANTAGE'}
-                </h3>
-                <h4 className="text-xl font-bold mb-4 drop-shadow-md">
+              </h3>
+              <h4 className="text-xl font-bold mb-4 drop-shadow-md">
                 {t?.strategic?.subtitle || 'Closer to Europe, Stronger Together'}
-                </h4>
-                <p className="text-gray-200 text-xs mb-4 drop-shadow-sm">
+              </h4>
+              <p className="text-gray-200 text-xs mb-4 drop-shadow-sm">
                 {t?.strategic?.description || 'Reduced sea distance to Europe compared to Asia'}
-                </p>
+              </p>
 
-                {/* Globe avec taille réduite et traits plus fins */}
-                <div className="flex flex-col items-center">
+              {/* Globe avec taille réduite et traits plus fins */}
+              <div className="flex flex-col items-center">
                 <div className="animate-spin-slow">
-                    <Globe className="w-40 h-40 text-orange-500 stroke-[1.5]" />
+                  <Globe className="w-40 h-40 text-orange-500 stroke-[1.5]" />
                 </div>
                 
                 {/* Texte en dessous */}
                 <div className="mt-4 text-center">
-                    <div className="text-orange-500 font-bold text-3xl drop-shadow-md">
+                  <div className="text-orange-500 font-bold text-3xl drop-shadow-md">
                     {t?.strategic?.percent || '50%'}
-                    </div>
-                    <div className="text-gray-200 text-[10px] text-center leading-tight drop-shadow-md">
+                  </div>
+                  <div className="text-gray-200 text-[10px] text-center leading-tight drop-shadow-md">
                     {t?.strategic?.distance || 'UP TO\nSHORTER SEA DISTANCE'}
-                    </div>
+                  </div>
                 </div>
-                </div>
+              </div>
             </div>
-            </div>
+          </div>
         </div>
       </div>
 

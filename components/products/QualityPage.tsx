@@ -17,7 +17,7 @@ const QualityPage: React.FC = () => {
     // Fond sombre correspondant au design global
     <div className="bg-[#0a0f1d] min-h-screen pb-20 text-gray-200">
       
-      {/* HEADER : Style sombre avec accent bleu */}
+      {/* HEADER SUPPRIMÉ - Section Hero conservée */}
       <section className="bg-[#101828] border-b border-gray-800 py-20 px-6 text-center">
         <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight">
           {t.quality_page?.title}

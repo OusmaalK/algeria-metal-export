@@ -37,7 +37,7 @@ export default function ProcessSteps({ t, locale }: ProcessStepsProps) {
       
       <div className="relative rounded-xl overflow-hidden">
         {/* Fond dégradé animé */}
-        <div className="absolute inset-0 bg-gradient-to-r from-orange-50 via-yellow-50 to-orange-50 bg-[length:200%_100%] animate-gradientMove opacity-60"></div>
+        <div className="absolute inset-0 bg-linear-to-r from-orange-50 via-yellow-50 to-orange-50 bg-size-[200%_100%] animate-gradientMove opacity-60"></div>
         
         {/* Grille des étapes */}
         <div className="relative z-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-6 p-6">

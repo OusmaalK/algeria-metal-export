@@ -16,7 +16,7 @@ export default function ContactModal({ onClose, productTitle }: any) {
   const inputClass = "w-full p-3 bg-gray-50 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none transition-all text-gray-900";
 
   return (
-    <div className="fixed inset-0 z-[100] bg-black/50 backdrop-blur-sm flex items-center justify-center p-4">
+    <div className="fixed inset-0 z-100 bg-black/50 backdrop-blur-sm flex items-center justify-center p-4">
       <div className="bg-white p-8 rounded-2xl shadow-2xl max-w-lg w-full max-h-[90vh] overflow-y-auto">
         <h3 className="text-2xl font-bold text-[#0f172a] mb-2">Demande de devis</h3>
         <p className="text-gray-500 mb-6 text-sm">

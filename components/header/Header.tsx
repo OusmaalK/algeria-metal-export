@@ -18,28 +18,28 @@ export default function Header({ t, locale, changeLanguage }: HeaderProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-slate-900 bg-[#0f172a] shadow-xl">
+    <header className="fixed top-0 left-0 right-0 z-50 w-full border-b border-slate-900 bg-[#0f172a] shadow-xl">
       <div 
-        className={`w-full max-w-[100vw] overflow-x-hidden flex h-24 items-center justify-between px-2 sm:px-4 lg:px-6 ${
+        className={`w-full max-w-[100vw] overflow-x-hidden flex h-40 items-center justify-between px-4 sm:px-6 lg:px-8 ${
           isRTL ? 'flex-row-reverse' : 'flex-row'
         }`}
       >
-        {/* Logo */}
+        {/* Logo - Taille DOUBLÉE par rapport à l'original */}
         <div className={`flex items-center shrink-0 ${isRTL ? 'lg:-mr-2' : 'lg:-ml-2'}`}>
           <Link href={`/${locale}`} className="flex items-center">
             <Image 
-              src="/icons/logo.svg"
+              src="/icons/logo.png"
               alt="Algeria Metal Export Logo"
-              width={200}
-              height={65}
-              priority              
-              className="object-contain max-h-[60px]"
+              width={400}
+              height={130}
+              priority             
+              className="object-contain h-32.5 w-auto"
             />
           </Link>
         </div>
 
         {/* Navigation Desktop */}
-        <div className="hidden lg:flex flex-1 justify-center px-4">
+        <div className="hidden lg:flex flex-1 justify-center px-6">
           <Navigation t={t} locale={locale} />
         </div>
 

@@ -41,7 +41,7 @@ export default function Logistics({ t, locale }: LogisticsProps) {
             >
               {/* En-tête de bloc (Icône + Titre du bloc) */}
               <div className={`flex items-center gap-3 mb-3 ${isRTL ? 'flex-row-reverse' : ''}`}>
-                <section.icon className="w-8 h-8 text-orange-500 flex-shrink-0" />
+                <section.icon className="w-8 h-8 text-orange-500 shrink-0" />
                 <h3 className="font-bold text-sm text-[#0f172a]">
                   {t.logistics?.[section.key]?.title}
                 </h3>

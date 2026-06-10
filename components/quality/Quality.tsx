@@ -14,15 +14,13 @@ export default function Quality({ t, locale }: QualityProps) {
   return (
     <section id="quality" className="py-5 bg-white">
       <div className="container mx-auto px-6">
-        
         {/* En-tête */}
         <div className={`flex justify-between items-end mb-8 border-b border-gray-100 pb-4 ${isRTL ? 'flex-row-reverse' : ''}`}>
           <h2 className="text-2xl md:text-3xl font-bold text-[#0f172a]">
             {t?.quality?.title}
           </h2>
-          
           <Link 
-            href={`/${locale}/quality`} 
+            href={`/${locale}/certification`}
             className={`text-sm font-bold text-[#0f172a] hover:text-orange-500 flex items-center gap-1 ${isRTL ? 'flex-row-reverse' : ''}`}
           >
             {t?.quality?.view_all}{' '}
@@ -42,7 +40,7 @@ export default function Quality({ t, locale }: QualityProps) {
               <p className="text-xs font-bold text-[#0f172a]">
                 {item?.name}
               </p>
-              <p className="text-[10px] text-gray-500 leading-relaxed max-w-[150px]">
+              <p className="text-[10px] text-gray-500 leading-relaxed max-w-37.5">
                 {item?.description}
               </p>
             </div>

@@ -23,8 +23,6 @@ import {
   CreditCard,
   Ship
 } from "lucide-react";
-import Header from '@/components/header/Header';
-import Actions from '@/components/header/Actions';
 
 export default function QualityCertificationPage() {
   const { t, locale, changeLanguage } = useTranslation();
@@ -33,9 +31,6 @@ export default function QualityCertificationPage() {
   return (
     <div className="min-h-screen bg-[#0f172a] text-white font-sans">
       
-      {/* ================= HEADER ================= */}
-      <Header t={t} locale={locale} changeLanguage={changeLanguage} />
-
       {/* ================= MAIN CONTENT ================= */}
       <main className="container mx-auto px-4 py-8">
         
@@ -44,10 +39,10 @@ export default function QualityCertificationPage() {
           <div className="flex flex-col lg:flex-row gap-8 items-start">
             <div className="lg:w-1/2 space-y-4">
               <h1 className="text-5xl md:text-6xl font-bold leading-tight">
-                QUALITY & CERTIFICATION
+                {t.quality_page.title}
               </h1>
               <p className="text-lg text-gray-300 max-w-xl">
-                International standards, strict laboratory testing, and full traceability for every shipment.
+                {t.quality_page.hero_subtitle}
               </p>
             </div>
             
@@ -56,29 +51,45 @@ export default function QualityCertificationPage() {
                 <div className="w-10 h-10 mb-2">
                   <ShieldCheck className="w-10 h-10 text-orange-500" />
                 </div>
-                <h4 className="font-bold text-sm">CERTIFIED<br/>QUALITY</h4>
-                <p className="text-[10px] text-gray-400">ASTM / EN / ISO<br/>3.1 Certificate</p>
+                <h4 className="font-bold text-sm whitespace-pre-line">
+                  {t.quality_page.certified_quality}
+                </h4>
+                <p className="text-[10px] text-gray-400 whitespace-pre-line">
+                  {t.quality_page.certified_desc}
+                </p>
               </div>
               <div className="flex flex-col items-center text-center p-4 bg-[#1e293b] rounded-lg border border-gray-800">
                 <div className="w-10 h-10 mb-2">
                   <FileCheck className="w-10 h-10 text-orange-500" />
                 </div>
-                <h4 className="font-bold text-sm">TRACEABLE<br/>DOCUMENTS</h4>
-                <p className="text-[10px] text-gray-400">Mill Test Certificates<br/>Batch Tracking</p>
+                <h4 className="font-bold text-sm whitespace-pre-line">
+                  {t.quality_page.traceable_documents}
+                </h4>
+                <p className="text-[10px] text-gray-400 whitespace-pre-line">
+                  {t.quality_page.traceable_desc}
+                </p>
               </div>
               <div className="flex flex-col items-center text-center p-4 bg-[#1e293b] rounded-lg border border-gray-800">
                 <div className="w-10 h-10 mb-2">
                   <Globe className="w-10 h-10 text-orange-500" />
                 </div>
-                <h4 className="font-bold text-sm">GLOBAL<br/>STANDARDS</h4>
-                <p className="text-[10px] text-gray-400">EN 10025 / ASTM<br/>ISO 9001:2015</p>
+                <h4 className="font-bold text-sm whitespace-pre-line">
+                  {t.quality_page.global_standards}
+                </h4>
+                <p className="text-[10px] text-gray-400 whitespace-pre-line">
+                  {t.quality_page.global_desc}
+                </p>
               </div>
               <div className="flex flex-col items-center text-center p-4 bg-[#1e293b] rounded-lg border border-gray-800">
                 <div className="w-10 h-10 mb-2">
                   <Users className="w-10 h-10 text-orange-500" />
                 </div>
-                <h4 className="font-bold text-sm">THIRD PARTY<br/>INSPECTION</h4>
-                <p className="text-[10px] text-gray-400">SGS / Bureau Veritas<br/>TUV</p>
+                <h4 className="font-bold text-sm whitespace-pre-line">
+                  {t.quality_page.third_party}
+                </h4>
+                <p className="text-[10px] text-gray-400 whitespace-pre-line">
+                  {t.quality_page.third_party_desc}
+                </p>
               </div>
             </div>
           </div>
@@ -94,7 +105,9 @@ export default function QualityCertificationPage() {
                 <div className="w-10 h-10 text-orange-500">
                   <FlaskRound className="w-10 h-10" />
                 </div>
-                <h2 className="text-xl font-bold">Chemical & Mechanical<br/>Compliance</h2>
+                <h2 className="text-xl font-bold whitespace-pre-line">
+                  {t.quality_page.card1_title}
+                </h2>
               </div>
               <div className="relative h-48 bg-gray-800 mt-4">
                 <Image 
@@ -106,27 +119,29 @@ export default function QualityCertificationPage() {
               </div>
             </div>
             <div className="p-6">
-              <h3 className="font-bold text-lg mb-2">Chemical & Mechanical Compliance</h3>
+              <h3 className="font-bold text-lg mb-2">
+                {t.quality_page.card1_title}
+              </h3>
               <p className="text-sm text-gray-400 mb-4">
-                Every batch undergoes rigorous spectroscopic analysis and mechanical testing to ensure exact chemical composition and structural integrity.
+                {t.quality_page.card1_desc}
               </p>
               
               <div className="space-y-2 text-sm">
                 <div className="flex justify-between py-2 border-b border-gray-800">
-                  <span className="text-gray-400">Parameter</span>
-                  <span className="text-white">Standard Guarantee</span>
+                  <span className="text-gray-400">{t.quality_page.table1.parameter}</span>
+                  <span className="text-white">{t.quality_page.table1.guarantee}</span>
                 </div>
                 <div className="flex justify-between py-2 border-b border-gray-800">
-                  <span className="text-gray-400">Traceability</span>
-                  <span className="text-white">Full Heat / Melt Number</span>
+                  <span className="text-gray-400">{t.quality_page.table1.traceability}</span>
+                  <span className="text-white">{t.quality_page.table1.traceability_val}</span>
                 </div>
                 <div className="flex justify-between py-2 border-b border-gray-800">
-                  <span className="text-gray-400">Steel Grade</span>
-                  <span className="text-white">Compliant with EN / ASTM</span>
+                  <span className="text-gray-400">{t.quality_page.table1.steel_grade}</span>
+                  <span className="text-white">{t.quality_page.table1.steel_grade_val}</span>
                 </div>
                 <div className="flex justify-between py-2 border-b border-gray-800">
-                  <span className="text-gray-400">Radioactivity</span>
-                  <span className="text-white">100% Certified Free</span>
+                  <span className="text-gray-400">{t.quality_page.table1.radioactivity}</span>
+                  <span className="text-white">{t.quality_page.table1.radioactivity_val}</span>
                 </div>
               </div>
             </div>
@@ -139,7 +154,9 @@ export default function QualityCertificationPage() {
                 <div className="w-10 h-10 text-orange-500">
                   <Award className="w-10 h-10" />
                 </div>
-                <h2 className="text-xl font-bold">International<br/>Standards</h2>
+                <h2 className="text-xl font-bold whitespace-pre-line">
+                  {t.quality_page.card2_title}
+                </h2>
               </div>
               <div className="relative h-48 bg-gray-800 mt-4">
                 <Image 
@@ -151,27 +168,29 @@ export default function QualityCertificationPage() {
               </div>
             </div>
             <div className="p-6">
-              <h3 className="font-bold text-lg mb-2">International Standards</h3>
+              <h3 className="font-bold text-lg mb-2">
+                {t.quality_page.card2_title}
+              </h3>
               <p className="text-sm text-gray-400 mb-4">
-                Our export products strictly comply with global industrial requirements, enabling seamless integration into European, African, and global supply chains.
+                {t.quality_page.card2_desc}
               </p>
               
               <div className="space-y-2 text-sm">
                 <div className="flex justify-between py-2 border-b border-gray-800">
-                  <span className="text-gray-400">Region</span>
-                  <span className="text-white">Applicable Standard</span>
+                  <span className="text-gray-400">{t.quality_page.table2.region}</span>
+                  <span className="text-white">{t.quality_page.table2.standard}</span>
                 </div>
                 <div className="flex justify-between py-2 border-b border-gray-800">
-                  <span className="text-gray-400">Europe</span>
-                  <span className="text-white">EN 10025 / EN 10080</span>
+                  <span className="text-gray-400">{t.quality_page.table2.europe}</span>
+                  <span className="text-white">{t.quality_page.table2.europe_val}</span>
                 </div>
                 <div className="flex justify-between py-2 border-b border-gray-800">
-                  <span className="text-gray-400">USA</span>
-                  <span className="text-white">ASTM Specifications</span>
+                  <span className="text-gray-400">{t.quality_page.table2.usa}</span>
+                  <span className="text-white">{t.quality_page.table2.usa_val}</span>
                 </div>
                 <div className="flex justify-between py-2 border-b border-gray-800">
-                  <span className="text-gray-400">Global</span>
-                  <span className="text-white">ISO 9001:2015 Quality Mgmt</span>
+                  <span className="text-gray-400">{t.quality_page.table2.global}</span>
+                  <span className="text-white">{t.quality_page.table2.global_val}</span>
                 </div>
               </div>
             </div>
@@ -184,7 +203,9 @@ export default function QualityCertificationPage() {
                 <div className="w-10 h-10 text-orange-500">
                   <FileText className="w-10 h-10" />
                 </div>
-                <h2 className="text-xl font-bold">Independent<br/>Inspection</h2>
+                <h2 className="text-xl font-bold whitespace-pre-line">
+                  {t.quality_page.card3_title}
+                </h2>
               </div>
               <div className="relative h-48 bg-gray-800 mt-4">
                 <Image 
@@ -196,27 +217,29 @@ export default function QualityCertificationPage() {
               </div>
             </div>
             <div className="p-6">
-              <h3 className="font-bold text-lg mb-2">Independent Inspection</h3>
+              <h3 className="font-bold text-lg mb-2">
+                {t.quality_page.card3_title}
+              </h3>
               <p className="text-sm text-gray-400 mb-4">
-                To ensure absolute transparency, we partner with world-renowned third-party inspection agencies prior to vessel loading.
+                {t.quality_page.card3_desc}
               </p>
               
               <div className="space-y-2 text-sm">
                 <div className="flex justify-between py-2 border-b border-gray-800">
-                  <span className="text-gray-400">Agency</span>
-                  <span className="text-white">Inspection Type</span>
+                  <span className="text-gray-400">{t.quality_page.table3.agency}</span>
+                  <span className="text-white">{t.quality_page.table3.inspection}</span>
                 </div>
                 <div className="flex justify-between py-2 border-b border-gray-800">
-                  <span className="text-gray-400">SGS / Bureau Veritas</span>
-                  <span className="text-white">Quantity & Quality Audit</span>
+                  <span className="text-gray-400">{t.quality_page.table3.sgs}</span>
+                  <span className="text-white">{t.quality_page.table3.sgs_val}</span>
                 </div>
                 <div className="flex justify-between py-2 border-b border-gray-800">
-                  <span className="text-gray-400">Cotecna / TUV</span>
-                  <span className="text-white">Pre-Shipment Inspection</span>
+                  <span className="text-gray-400">{t.quality_page.table3.cotecna}</span>
+                  <span className="text-white">{t.quality_page.table3.cotecna_val}</span>
                 </div>
                 <div className="flex justify-between py-2 border-b border-gray-800">
-                  <span className="text-gray-400">Documentation</span>
-                  <span className="text-white">Mill Test Certificate 3.1</span>
+                  <span className="text-gray-400">{t.quality_page.table3.documentation}</span>
+                  <span className="text-white">{t.quality_page.table3.documentation_val}</span>
                 </div>
               </div>
             </div>
@@ -230,7 +253,7 @@ export default function QualityCertificationPage() {
             className="border border-gray-500 hover:border-white text-white px-8 py-3 rounded-md font-bold text-sm tracking-wide transition inline-flex items-center justify-center gap-2"
           >
             <Download className="w-4 h-4" />
-            DOWNLOAD SAMPLE MILL TEST CERTIFICATE (PDF)
+            {t.quality_page.download_btn}
           </Link>
         </div>
 
@@ -241,16 +264,20 @@ export default function QualityCertificationPage() {
               <Phone className="w-6 h-6 text-white" />
             </div>
             <div>
-              <h3 className="text-white font-bold text-lg">Need specific quality requirements or custom testing?</h3>
-              <p className="text-sm text-gray-400">Our laboratory can match your exact industrial specifications.</p>
+              <h3 className="text-white font-bold text-lg">
+                {t.quality_page.cta_title}
+              </h3>
+              <p className="text-sm text-gray-400">
+                {t.quality_page.cta_subtitle}
+              </p>
             </div>
           </div>
           <div className="flex gap-3">
             <Link href="#" className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded text-sm font-medium flex items-center gap-2 transition">
-              <FileText className="w-4 h-4" /> REQUEST A QUALITY SPEC SHEET
+              <FileText className="w-4 h-4" /> {t.quality_page.cta_request}
             </Link>
             <Link href="#" className="border border-gray-600 hover:border-white text-white px-6 py-2 rounded text-sm font-medium flex items-center gap-2 transition">
-              <MessageCircle className="w-4 h-4" /> DISCUSS TECHNICAL TERMS ON WHATSAPP
+              <MessageCircle className="w-4 h-4" /> {t.quality_page.cta_whatsapp}
             </Link>
           </div>
         </div>

@@ -22,8 +22,6 @@ import {
   CheckCircle,
   ArrowRight
 } from "lucide-react";
-import Header from '@/components/header/Header';
-import Actions from '@/components/header/Actions';
 
 export default function AboutUsPage() {
   const { t, locale, changeLanguage } = useTranslation();
@@ -32,39 +30,36 @@ export default function AboutUsPage() {
   return (
     <div className="min-h-screen bg-[#0f172a] text-white font-sans">
       
-      {/* ================= HEADER ================= */}
-      <Header t={t} locale={locale} changeLanguage={changeLanguage} />
-
       {/* ================= MAIN CONTENT ================= */}
       <main className="container mx-auto px-4 py-8">
         
         {/* ================= HERO ================= */}
         <div className="relative mb-12 text-center">
           <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-4">
-            ABOUT US
+            {t.about_page.title}
           </h1>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-            A leading force in metal and ferrous product exports from Algeria to the world.
+            {t.about_page.hero_subtitle}
           </p>
         </div>
 
         {/* ================= FEATURES ================= */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
           <div className="text-center">
-            <h3 className="font-bold text-lg mb-2">Consistent Quality</h3>
-            <p className="text-sm text-gray-400">Our company consistent quality and professional facilities.</p>
+            <h3 className="font-bold text-lg mb-2">{t.about_page.feature1_title}</h3>
+            <p className="text-sm text-gray-400">{t.about_page.feature1_desc}</p>
           </div>
           <div className="text-center">
-            <h3 className="font-bold text-lg mb-2">Certified Products</h3>
-            <p className="text-sm text-gray-400">We indrustrie extensive utility and processing capabilities.</p>
+            <h3 className="font-bold text-lg mb-2">{t.about_page.feature2_title}</h3>
+            <p className="text-sm text-gray-400">{t.about_page.feature2_desc}</p>
           </div>
           <div className="text-center">
-            <h3 className="font-bold text-lg mb-2">Company Industria</h3>
-            <p className="text-sm text-gray-400">Our customely ocragnized scrap and answer aneloeorenee.</p>
+            <h3 className="font-bold text-lg mb-2">{t.about_page.feature3_title}</h3>
+            <p className="text-sm text-gray-400">{t.about_page.feature3_desc}</p>
           </div>
           <div className="text-center">
-            <h3 className="font-bold text-lg mb-2">Global Footprint</h3>
-            <p className="text-sm text-gray-400">Tritair international trade networks to major or port regions.</p>
+            <h3 className="font-bold text-lg mb-2">{t.about_page.feature4_title}</h3>
+            <p className="text-sm text-gray-400">{t.about_page.feature4_desc}</p>
           </div>
         </div>
 
@@ -82,22 +77,22 @@ export default function AboutUsPage() {
               />
             </div>
             <div className="p-6">
-              <h3 className="font-bold text-xl mb-2">Our Legacy</h3>
+              <h3 className="font-bold text-xl mb-2">{t.about_page.card1_title}</h3>
               <p className="text-sm text-gray-400 mb-4">
-                A clean professional office, brown as a modern, professional facility or main office building.
+                {t.about_page.card1_desc}
               </p>
               <ul className="space-y-1 text-xs text-gray-400">
                 <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-orange-500 flex-shrink-0 mt-0.5" />
-                  <span>Key Milestones: Est. early 2000s</span>
+                  <CheckCircle className="w-4 h-4 text-orange-500 shrink-0 mt-0.5" />
+                  <span>{t.about_page.card1_item1}</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-orange-500 flex-shrink-0 mt-0.5" />
-                  <span>Core Experience: 20+ Years in Industry</span>
+                  <CheckCircle className="w-4 h-4 text-orange-500 shrink-0 mt-0.5" />
+                  <span>{t.about_page.card1_item2}</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-orange-500 flex-shrink-0 mt-0.5" />
-                  <span>Key Markets: Established Global Reach</span>
+                  <CheckCircle className="w-4 h-4 text-orange-500 shrink-0 mt-0.5" />
+                  <span>{t.about_page.card1_item3}</span>
                 </li>
               </ul>
             </div>
@@ -114,26 +109,26 @@ export default function AboutUsPage() {
               />
             </div>
             <div className="p-6">
-              <h3 className="font-bold text-xl mb-2">Our Infrastructure</h3>
+              <h3 className="font-bold text-xl mb-2">{t.about_page.card2_title}</h3>
               <p className="text-sm text-gray-400 mb-4">
-                Extensive facility and processing capabilities, with mass scrap organized hub and logistics.
+                {t.about_page.card2_desc}
               </p>
               <ul className="space-y-1 text-xs text-gray-400">
                 <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-orange-500 flex-shrink-0 mt-0.5" />
-                  <span>Key Facilities: Massive Yard Space</span>
+                  <CheckCircle className="w-4 h-4 text-orange-500 shrink-0 mt-0.5" />
+                  <span>{t.about_page.card2_item1}</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-orange-500 flex-shrink-0 mt-0.5" />
-                  <span>Modern Processing</span>
+                  <CheckCircle className="w-4 h-4 text-orange-500 shrink-0 mt-0.5" />
+                  <span>{t.about_page.card2_item2}</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-orange-500 flex-shrink-0 mt-0.5" />
-                  <span>Integrated Logistics Center</span>
+                  <CheckCircle className="w-4 h-4 text-orange-500 shrink-0 mt-0.5" />
+                  <span>{t.about_page.card2_item3}</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-orange-500 flex-shrink-0 mt-0.5" />
-                  <span>Multi-modal Transport</span>
+                  <CheckCircle className="w-4 h-4 text-orange-500 shrink-0 mt-0.5" />
+                  <span>{t.about_page.card2_item4}</span>
                 </li>
               </ul>
             </div>
@@ -150,22 +145,22 @@ export default function AboutUsPage() {
               />
             </div>
             <div className="p-6">
-              <h3 className="font-bold text-xl mb-2">Global Footprint</h3>
+              <h3 className="font-bold text-xl mb-2">{t.about_page.card3_title}</h3>
               <p className="text-sm text-gray-400 mb-4">
-                International trade networks in international export, nations, and ports to major regions.
+                {t.about_page.card3_desc}
               </p>
               <ul className="space-y-1 text-xs text-gray-400">
                 <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-orange-500 flex-shrink-0 mt-0.5" />
-                  <span>Key Markets Served: Algeria, Spain, India...</span>
+                  <CheckCircle className="w-4 h-4 text-orange-500 shrink-0 mt-0.5" />
+                  <span>{t.about_page.card3_item1}</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-orange-500 flex-shrink-0 mt-0.5" />
-                  <span>Annual Volumes: 2000 volumes</span>
+                  <CheckCircle className="w-4 h-4 text-orange-500 shrink-0 mt-0.5" />
+                  <span>{t.about_page.card3_item2}</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-orange-500 flex-shrink-0 mt-0.5" />
-                  <span>Multi-modal routes, multiple routes, more</span>
+                  <CheckCircle className="w-4 h-4 text-orange-500 shrink-0 mt-0.5" />
+                  <span>{t.about_page.card3_item3}</span>
                 </li>
               </ul>
             </div>
@@ -179,7 +174,7 @@ export default function AboutUsPage() {
             className="border border-gray-500 hover:border-white text-white px-8 py-3 rounded-md font-bold text-sm tracking-wide transition inline-flex items-center justify-center gap-2"
           >
             <Download className="w-4 h-4" />
-            DOWNLOAD CORPORATE BROCHURE (PDF)
+            {t.about_page.download_btn}
           </Link>
         </div>
 
@@ -187,23 +182,23 @@ export default function AboutUsPage() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
           <div className="bg-[#1e293b] p-4 rounded-lg border border-gray-800 flex flex-col items-center text-center">
             <Box className="w-8 h-8 text-orange-500 mb-2" />
-            <h4 className="font-bold text-xs">PACKAGING</h4>
-            <p className="text-[10px] text-gray-400">Bulk / Loose<br/>Containers / Loose</p>
+            <h4 className="font-bold text-xs whitespace-pre-line">{t.about_page.grid1_title}</h4>
+            <p className="text-[10px] text-gray-400 whitespace-pre-line">{t.about_page.grid1_desc}</p>
           </div>
           <div className="bg-[#1e293b] p-4 rounded-lg border border-gray-800 flex flex-col items-center text-center">
             <Warehouse className="w-8 h-8 text-orange-500 mb-2" />
-            <h4 className="font-bold text-xs">MONTHLY<br/>CAPACITY</h4>
-            <p className="text-[10px] text-gray-400">100,000+ Tons<br/>Consistent Supply</p>
+            <h4 className="font-bold text-xs whitespace-pre-line">{t.about_page.grid2_title}</h4>
+            <p className="text-[10px] text-gray-400 whitespace-pre-line">{t.about_page.grid2_desc}</p>
           </div>
           <div className="bg-[#1e293b] p-4 rounded-lg border border-gray-800 flex flex-col items-center text-center">
             <Phone className="w-8 h-8 text-orange-500 mb-2" />
-            <h4 className="font-bold text-xs">PHONEUS</h4>
-            <p className="text-[10px] text-gray-400">+213 55 12 34 56 78</p>
+            <h4 className="font-bold text-xs whitespace-pre-line">{t.about_page.grid3_title}</h4>
+            <p className="text-[10px] text-gray-400 whitespace-pre-line">{t.about_page.grid3_desc}</p>
           </div>
           <div className="bg-[#1e293b] p-4 rounded-lg border border-gray-800 flex flex-col items-center text-center">
             <Users className="w-8 h-8 text-orange-500 mb-2" />
-            <h4 className="font-bold text-xs">SNAPPING</h4>
-            <p className="text-[10px] text-gray-400">International<br/>Networks</p>
+            <h4 className="font-bold text-xs whitespace-pre-line">{t.about_page.grid4_title}</h4>
+            <p className="text-[10px] text-gray-400 whitespace-pre-line">{t.about_page.grid4_desc}</p>
           </div>
         </div>
 
@@ -214,16 +209,16 @@ export default function AboutUsPage() {
               <Phone className="w-6 h-6 text-white" />
             </div>
             <div>
-              <h3 className="text-white font-bold text-lg">Looking for a reliable long-term supply partner?</h3>
-              <p className="text-sm text-gray-400">Contact us today and let's build a strong partnership together.</p>
+              <h3 className="text-white font-bold text-lg">{t.about_page.cta_title}</h3>
+              <p className="text-sm text-gray-400">{t.about_page.cta_subtitle}</p>
             </div>
           </div>
           <div className="flex gap-3">
             <Link href="#" className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded text-sm font-medium flex items-center gap-2 transition">
-              PARTNER WITH US
+              {t.about_page.cta_btn1}
             </Link>
             <Link href="#" className="border border-gray-600 hover:border-white text-white px-6 py-2 rounded text-sm font-medium flex items-center gap-2 transition">
-              <MessageCircle className="w-4 h-4" /> CONTACT OUR TEAM
+              <MessageCircle className="w-4 h-4" /> {t.about_page.cta_btn2}
             </Link>
           </div>
         </div>
