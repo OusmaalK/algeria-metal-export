@@ -10,6 +10,7 @@ import Actions from './Actions';
 interface HeaderProps {
   t: any;
   locale: string;
+  // ✅ changeLanguage supprimé de l'interface
 }
 
 export default function Header({ t, locale }: HeaderProps) {

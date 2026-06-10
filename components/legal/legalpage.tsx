@@ -5,7 +5,7 @@ import { useTranslation } from '@/hooks/useTranslation';
 import Footer from '@/components/footer/Footer';
 
 export default function LegalPage() {
-  const { t, locale, changeLanguage } = useTranslation();
+  const { t, locale } = useTranslation();
   const isRTL = locale === 'ar';
 
   console.log('📍 Locale dans LegalPage:', locale);

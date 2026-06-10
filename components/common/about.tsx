@@ -24,7 +24,7 @@ import {
 } from "lucide-react";
 
 export default function AboutUsPage() {
-  const { t, locale, changeLanguage } = useTranslation();
+  const { t, locale} = useTranslation();
   const isRTL = locale === 'ar';
 
   return (

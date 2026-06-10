@@ -25,7 +25,7 @@ import {
 } from "lucide-react";
 
 export default function QualityCertificationPage() {
-  const { t, locale, changeLanguage } = useTranslation();
+  const { t, locale } = useTranslation();
   const isRTL = locale === 'ar';
 
   return (

@@ -10,11 +10,10 @@ type Translation = Record<string, any>;
 
 export function useTranslation() {
   const pathname = usePathname();
-  const router = useRouter(); // ✅ AJOUT DE useRouter
+  const router = useRouter();
   const pathLocale = pathname.split('/')[1] as Locale;
   const [locale, setLocale] = useState<Locale>(pathLocale || 'fr');
 
-  // ✅ Utiliser l'objet translations directement
   const t = translations[locale] || translations.fr;
 
   useEffect(() => {
@@ -22,13 +21,7 @@ export function useTranslation() {
     document.documentElement.dir = locale === 'ar' ? 'rtl' : 'ltr';
   }, [locale]);
 
-  const changeLanguage = (newLocale: Locale) => {
-    if (newLocale !== locale) {
-      // ✅ Utiliser router.push au lieu de window.location.href
-      const currentPath = pathname.replace(/^\/[a-z]{2}/, '');
-      router.push(`/${newLocale}${currentPath}`);
-    }
-  };
+  // ✅ changeLanguage est maintenant géré par les liens <Link> dans les composants
 
-  return { t, locale, changeLanguage };
+  return { t, locale };
 }

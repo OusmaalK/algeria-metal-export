@@ -22,7 +22,7 @@ import {
 } from "lucide-react";
 
 export default function RequestQuotationPage() {
-  const { t, locale, changeLanguage } = useTranslation();
+  const { t, locale } = useTranslation();
   const isRTL = locale === 'ar';
 
   const [formData, setFormData] = useState({

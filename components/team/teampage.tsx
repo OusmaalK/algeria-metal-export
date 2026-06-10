@@ -7,12 +7,12 @@ import Footer from '@/components/footer/Footer';
 import { Mail, Phone, Linkedin, Award, ShieldCheck, Globe, Leaf, Users, Target } from 'lucide-react';
 
 export default function TeamPage() {
-  const { t, locale } = useTranslation(); // ✅ changeLanguage supprimé
+  const { t, locale } = useTranslation(); // ✅ Un seul appel, sans changeLanguage
   const isRTL = locale === 'ar';
 
   return (
     <div className={`min-h-screen bg-[#0f172a] text-white ${isRTL ? 'rtl' : 'ltr'}`}>
-      <Header t={t} locale={locale} /> {/* ✅ changeLanguage supprimé */}
+      <Header t={t} locale={locale} /> {/* ✅ Sans changeLanguage */}
       
       <main className="container mx-auto px-6 py-12 space-y-16">
         
@@ -31,7 +31,7 @@ export default function TeamPage() {
           <div className="flex flex-col md:flex-row gap-6 items-center md:items-start">
             {/* Avatar */}
             <div className="w-32 h-32 md:w-40 md:h-40 shrink-0">
-              <div className="w-full h-full rounded-full bg-linear-to-br from-orange-500 to-amber-600 p-1">
+              <div className="w-full h-full rounded-full bg-gradient-to-br from-orange-500 to-amber-600 p-1">
                 <div className="w-full h-full rounded-full bg-[#0f172a] flex items-center justify-center text-2xl font-bold text-white">
                   {t?.team?.manager_initials || 'BA'}
                 </div>
@@ -87,7 +87,7 @@ export default function TeamPage() {
           <div className="flex flex-col md:flex-row gap-6 items-center md:items-start">
             {/* Avatar */}
             <div className="w-32 h-32 md:w-40 md:h-40 shrink-0">
-              <div className="w-full h-full rounded-full bg-linear-to-br from-orange-500 to-amber-600 p-1">
+              <div className="w-full h-full rounded-full bg-gradient-to-br from-orange-500 to-amber-600 p-1">
                 <div className="w-full h-full rounded-full bg-[#0f172a] flex items-center justify-center text-2xl font-bold text-white">
                   {t?.team?.cmanager_initials || 'AM'}
                 </div>

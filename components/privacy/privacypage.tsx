@@ -3,17 +3,16 @@
 
 import { useTranslation } from '@/hooks/useTranslation';
 import Header from '@/components/header/Header';
-import Footer from '@/components/footer/Footer';
 
 export default function PrivacyPage() {
-  const { t, locale, changeLanguage } = useTranslation();
+  const { t, locale } = useTranslation();
   const isRTL = locale === 'ar';
 
   console.log('📍 Locale dans PrivacyPage:', locale);
 
   return (
     <div className={`min-h-screen bg-[#0f172a] text-white ${isRTL ? 'rtl' : 'ltr'}`}>
-      <Header t={t} locale={locale} changeLanguage={changeLanguage} />
+    <Header t={t} locale={locale} />
       
       <main className="container mx-auto px-6 py-12">
         <h1 className={`text-3xl font-bold mb-8 border-l-4 border-orange-500 pl-4 ${isRTL ? 'border-l-0 border-r-4 pr-4' : ''}`}>

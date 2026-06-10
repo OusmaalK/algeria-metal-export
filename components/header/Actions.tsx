@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useTranslation } from '@/hooks/useTranslation';
+import { usePathname } from 'next/navigation';
 
 interface ActionsProps {
   t: any;
@@ -9,7 +10,8 @@ interface ActionsProps {
 }
 
 export default function Actions({ t, locale }: ActionsProps) {
-  const { changeLanguage } = useTranslation();
+  const pathname = usePathname();
+  const currentPath = pathname.replace(/^\/[a-z]{2}/, '');
   const isRTL = locale === 'ar';
 
   return (
@@ -25,26 +27,26 @@ export default function Actions({ t, locale }: ActionsProps) {
       
       {/* Sélecteur de langue */}
       <div className={`flex items-center gap-1 text-xs font-bold text-slate-300 ${isRTL ? 'flex-row-reverse' : ''}`}>
-        <button 
-          onClick={() => changeLanguage('en')} 
+        <Link
+          href={`/en${currentPath}`}
           className={`transition-colors uppercase ${locale === 'en' ? 'text-white font-extrabold' : 'hover:text-white text-slate-400'}`}
         >
           EN
-        </button>
+        </Link>
         <span className="text-slate-600">|</span>
-        <button 
-          onClick={() => changeLanguage('fr')} 
+        <Link
+          href={`/fr${currentPath}`}
           className={`transition-colors uppercase ${locale === 'fr' ? 'text-white font-extrabold' : 'hover:text-white text-slate-400'}`}
         >
           FR
-        </button>
+        </Link>
         <span className="text-slate-600">|</span>
-        <button 
-          onClick={() => changeLanguage('ar')} 
+        <Link
+          href={`/ar${currentPath}`}
           className={`transition-colors uppercase ${locale === 'ar' ? 'text-white font-extrabold' : 'hover:text-white text-slate-400'}`}
         >
           AR
-        </button>
+        </Link>
       </div>
 
     </div>

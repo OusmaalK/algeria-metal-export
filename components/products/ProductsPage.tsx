@@ -23,7 +23,7 @@ import {
 } from "lucide-react";
 
 export default function ProductsPage() {
-  const { t, locale, changeLanguage } = useTranslation();
+  const { t, locale } = useTranslation();
   const isRTL = locale === 'ar';
   const [activeFilter, setActiveFilter] = useState('all');
 
