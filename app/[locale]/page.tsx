@@ -21,7 +21,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-white font-sans text-slate-900">
-      <Hero t={t} locale={locale} />
+      <Hero />      
       <Stats t={t} locale={locale} />
       <Products t={t} locale={locale} />
       <Logistics t={t} locale={locale} />

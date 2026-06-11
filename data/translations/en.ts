@@ -374,7 +374,7 @@ export default {
     skill_7: 'Field Logistics',
     skill_8: 'Supplier Relations',
     cta_title: 'Want to talk to our experts?',
-    cta_subtitle: 'We\'ll respond within 24 hours.',
+    cta_subtitle: 'We ll respond within 24 hours',
     cta_button: 'Contact our team'
   },
   legal: {

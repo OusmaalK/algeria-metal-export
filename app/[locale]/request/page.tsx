@@ -1,4 +1,4 @@
-import RequestQuotationPage from '@/components/common/request';
+import RequestQuotationPage from '@/components/request/request';
 
 export default function RequestPage() {
   return <RequestQuotationPage />;

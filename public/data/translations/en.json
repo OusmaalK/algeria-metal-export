@@ -387,9 +387,6 @@
     "stat_ports": "Operated Ports",
     "stat_countries": "Countries Served",
     "stat_volume": "Annual Volume (tons)",
-    "cta_title": "Want to talk to our experts?",
-    "cta_subtitle": "We'll respond within 24 hours.",
-    "cta_button": "Contact our team",
     "skill_1": "International Logistics",
     "skill_2": "International Negotiation",
     "skill_3": "Compliance & Standards",
@@ -397,7 +394,10 @@
     "skill_5": "Operational Management",
     "skill_6": "Quality Control",
     "skill_7": "Field Logistics",
-    "skill_8": "Supplier Relations"
+    "skill_8": "Supplier Relations",
+    "cta_title": "Want to talk to our experts?",
+    "cta_subtitle": "We'll respond within 24 hours.",
+    "cta_button": "Contact our team"
   },
   "products_page": {
     "title": "OUR PRODUCTS",

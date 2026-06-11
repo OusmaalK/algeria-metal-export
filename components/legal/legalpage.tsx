@@ -2,7 +2,6 @@
 'use client';
 
 import { useTranslation } from '@/hooks/useTranslation';
-import Footer from '@/components/footer/Footer';
 
 export default function LegalPage() {
   const { t, locale } = useTranslation();
@@ -84,7 +83,6 @@ export default function LegalPage() {
         </div>
       </main>
 
-      <Footer t={t} locale={locale} />
     </div>
   );
 }
