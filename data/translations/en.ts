@@ -388,7 +388,10 @@ export default {
     leadership_alt: 'Team on site in Algeria',
     mastery_title: 'Domain Mastery',
     mastery_desc: 'In-depth knowledge of products, standards, and supply chains in Algeria.',
-    mastery_alt: 'Storage site in Algeria'
+    mastery_alt: 'Storage site in Algeria',
+    anchor_detail: "Our presence in Algeria allows us to anticipate local market fluctuations. We maintain privileged relationships with collectors and storage sites across the country, ensuring a stable and quality supply.",
+    leadership_detail: "We make strategic decisions to structure the Algerian metallurgical sector. Our leadership is demonstrated through constant monitoring, targeted investments, and personalized support for local players.",
+    mastery_detail: "Our domain mastery covers the entire value chain: from collection to export, through quality control and logistics. Expertise recognized by our international partners.",
   },
   legal: {
     title: 'Legal Notice',

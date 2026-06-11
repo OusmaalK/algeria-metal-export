@@ -410,7 +410,10 @@
     "leadership_alt": "Équipe sur site en Algérie",
     "mastery_title": "Maîtrise du Domaine",
     "mastery_desc": "Une connaissance approfondie des produits, des normes et des circuits d'approvisionnement en Algérie.",
-    "mastery_alt": "Site de stockage en Algérie"
+    "mastery_alt": "Site de stockage en Algérie",
+    "anchor_detail": "Notre implantation en Algérie nous permet d'anticiper les fluctuations du marché local. Nous entretenons des relations privilégiées avec les collecteurs et les sites de stockage à travers le pays, garantissant un approvisionnement stable et de qualité.",
+    "leadership_detail": "Nous prenons des décisions stratégiques pour structurer la filière métallurgique algérienne. Notre leadership se manifeste par une veille constante, des investissements ciblés et un accompagnement personnalisé des acteurs locaux.",
+    "mastery_detail": "Notre maîtrise du domaine couvre l'ensemble de la chaîne de valeur : de la collecte à l'export, en passant par le contrôle qualité et la logistique. Une expertise reconnue par nos partenaires internationaux."
   },
     "products_page": {
       "title": "NOS PRODUITS",
